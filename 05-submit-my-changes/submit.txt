@@ -1,0 +1,107 @@
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git remote add origin https://github.com/mukhyiddin/tech4impact-students-bio.git
+error: remote origin already exists.
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git branch mukhyiddin
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git checkout mukhyiddin
+Switched to branch 'mukhyiddin'
+D       .gitattributes
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ touch mukhyiddin.md
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ ls
+03-branch-and-merge.txt  05-submit-my-changes/
+04-more-advanced.txt     mukhyiddin.md
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ echo "nama: Mukhyiddin
+> umur: 24
+> Pesan yang ingin disampaikan: jangan pernah berhenti di tengah jalan" > mukhyiddin.md
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git add .
+warning: LF will be replaced by CRLF in mukhyiddin.md.
+The file will have its original line endings in your working directory
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git branch
+  main
+* mukhyiddin
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git init .
+Reinitialized existing Git repository in C:/Users/YOLEX/Documents/GitHub/Tugas-Github-Lanjut/.git/
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git add .
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git commit -m "mukhyiddin.md"
+[mukhyiddin 1206a45] mukhyiddin.md
+ 4 files changed, 49 insertions(+), 2 deletions(-)
+ delete mode 100644 .gitattributes
+ create mode 100644 03-branch-and-merge.txt
+ create mode 100644 04-more-advanced.txt
+ create mode 100644 mukhyiddin.md
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git branch
+* main
+  mukhyiddin
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git merge mukhyiddin
+Updating 0c7051b..1206a45
+Fast-forward
+ .gitattributes          |  2 --
+ 03-branch-and-merge.txt | 32 ++++++++++++++++++++++++++++++++
+ 04-more-advanced.txt    | 14 ++++++++++++++
+ mukhyiddin.md           |  3 +++
+ 4 files changed, 49 insertions(+), 2 deletions(-)
+ delete mode 100644 .gitattributes
+ create mode 100644 03-branch-and-merge.txt
+ create mode 100644 04-more-advanced.txt
+ create mode 100644 mukhyiddin.md
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/mukhyiddin/Tugas-Github-Lanjut.git'
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.63 KiB | 416.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mukhyiddin/Tugas-Github-Lanjut.git
+   0c7051b..1206a45  main -> main
+branch 'main' set up to track 'origin/main'.
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (main)
+$ git checkout mukhyiddin
+Switched to branch 'mukhyiddin'
+
+YOLEX@NeonGate5 MINGW64 ~/Documents/GitHub/Tugas-Github-Lanjut (mukhyiddin)
+$ git push -u origin mukhyiddin
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'mukhyiddin' on GitHub by visiting:
+remote:      https://github.com/mukhyiddin/Tugas-Github-Lanjut/pull/new/mukhyiddin
+remote:
+To https://github.com/mukhyiddin/Tugas-Github-Lanjut.git
+ * [new branch]      mukhyiddin -> mukhyiddin
+branch 'mukhyiddin' set up to track 'origin/mukhyiddin'.
