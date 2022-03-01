@@ -1,0 +1,32 @@
+1. What does git clean do?
+    Membersihkan directory dengan menghapus file yang tidak berada di bawah kontrol versi secara rekursif, mulai dari direktori saat ini.
+
+2. What do the -d and -f flags for git clean do?
+    git clean -f akan beroperasi pada semua file yang tidak terlacak dalam direktori saat ini.
+    git clean -d akan beroperasi untuk menghapus direktori secara permanen
+
+3. What git command creates a branch?
+    git branch nama-branch
+
+4. What is the difference between a fast-forward and recursive merge?
+    fast-forward merupakan jenis merge dimana saat kita bekerja pada branch, tidak ada penambahan commit pada main/master branch, 
+    sedangkan recursive merge tidak. Jadi merge fast-forward saat di commit tidak akan terjadi konflik. 
+
+5. What git command changes to another branch?
+    git checkout target-branch
+
+6. How do you remove modified or deleted files from the working directory?
+    rm target-file
+
+7. What git command deletes a branch?
+    git branch -d target-branch
+
+8. What does the git diff command do?
+    git diff memberitahu kita secara mendetail apa saja perubahan yang terjadi di antara dua titik referensi Git. 
+    Secara default, ketika kita menjalankan git diff tanpa argumen apa-apa, Git akan mencetak perubahan yang terjadi antara working tree dan HEAD 
+
+9. How do you remove files from the staging area?
+    git reset HEAD nama_file
+
+10. How do merge conflicts happen?
+    Konflik penggabungan biasanya terjadi ketika cabang Anda saat ini dan cabang yang ingin Anda gabungkan ke dalam cabang saat ini telah menyimpang
